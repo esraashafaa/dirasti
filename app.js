@@ -8,6 +8,9 @@ var accountRouter = require('./routes/account');
 var usersRouter = require('./routes/users');
 var app = express();
 const mysql = require('mysql');
+var server = app.listen((3000),()=>{
+    console.log("work in 3000");
+});
 const connection = mysql.createConnection({
     host:'db4free.net',
     user:'derasti',
